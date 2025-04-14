@@ -5,10 +5,7 @@ position: relative;
 }
 /*MAPA IFRAME*/
 .mapa{
-    border: solid #660708;
-    margin: 20px auto;       /* centra el contenedor */
-    width: fit-content;      /* solo ocupa lo necesario */
-    padding: 5px;
+    
 }
 
 .navbar{
@@ -155,19 +152,17 @@ header{
     text-align: center;
 }
 .pie5{
-    border:solid #660708;
-    margin-right: 50%;
-    text-align: center;
-    bottom: 0px;
-    margin: auto;
-    padding: none;
+    
 }
 
 
 
 /*POSICION DE IMAGENES*/
 .PRECIOTB img {
-    
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* centra la imagen horizontalmente */
   }
   
 .IMG1{
