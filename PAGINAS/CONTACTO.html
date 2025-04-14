@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-     
-     <!--BOOTSTRAP-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
-    
-    <!--LINK CSS-->
-     <link rel="stylesheet" href="../CSS STYLE/Style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+
+  <!--LINK CSS-->
+  <link rel="stylesheet" href="../CSS STYLE/Style.css">
 </head>
-    <header>
+<header>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="../IMAGENES/Logo png especial.png" alt="Bootstrap" width="110" >
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../PAGINAS/SOBRE NOSOTROS.html">SOBRE NOSOTROS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="../PAGINAS/PRODUCTOS.html" role="button" >
-                    PRODUCTOS
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true" href="../PAGINAS/PRECIOS.html">PRECIOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true" href="#">CONTACTO</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../IMAGENES/Logo png especial.png" alt="Bootstrap" width="110">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../PAGINAS/SOBRE NOSOTROS.html">SOBRE NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../PAGINAS/PRODUCTOS.html" role="button">
+              PRODUCTOS
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true" href="../PAGINAS/PRECIOS.html">PRECIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true" href="#">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
- <!--
+  <!--
           <nav class="li5">
             <ul>
             
@@ -64,74 +67,96 @@
             <img src="../IMAGENES/Logo png especial.png" alt="LOGO" width="430" height="230" class="LOGOINI">
         </nav> 
           -->
-        
-    </header>
+
+</header>
+
 <body>
 
-    <h1 class="TITULO5">MUY PRONTO....</h1>
-    
-    
-    <form action="/ENVIAR" method="post"><!--caja para formulario-->
-            
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <!--informacion general de contacto-->
-        <h1>INGRESE SU INFORMACION DE CONTACTO</h1><br>
-        <label for="Nombre">NOMBRE</label>
-        <input type="text" name="nombre" id="Nombre">
-        <br><br>
-        <label for="Apellido">APELLIDO</label>
-        <input type="text" name="apellido" id="Apellido">
-        <br><br>
-        <label for="Gmail">CORREO</label>
-        <input type="email" name="correo" id="Gmail">
-        <br><br>
-        <!--HOMBRE O MUJER-->
-            <b><p>GENERO:</p></b>
-        <label for="hombre">Hombre</label>
-        <input type="radio" name="genero" id="hombre">
-        
-        <label for="mujer">Mujer</label>
-        <input type="radio" name="genero" id="mujer">
-        <br><br>
+  <h1 class="TITULO5">CONTACTANOS</h1>
 
+
+  
+   <!--FORMULARIO-->
+   <form class="formulario-contacto" action="/ENVIAR" method="post">
+    <h2>Formulario de Contacto</h2>
+  
+    <div class="form-grid">
+      <div>
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="nombre" id="Nombre" required>
+      </div>
+  
+      <div>
+        <label for="Apellido">Apellido</label>
+        <input type="text" name="apellido" id="Apellido" required>
+      </div>
+  
+      <div>
+        <label for="Correo">Correo</label>
+        <input type="email" name="correo" id="Correo" required>
+      </div>
+  
+      <div>
+        <label for="Celular">Celular</label>
+        <input type="tel" name="celular" id="Celular" required>
+      </div>
+  
+      <div>
         <label for="Ciudad">Ciudad</label>
-        <select name="SELECTOR" id="">
-            <option value="">Bogota</option>
-            <option value="">Madrid</option>
-            <option value="">Chia</option>
-            <option value="">Mosquera</option>
-            <option value="">Soacha</option>
+        <select name="ciudad" id="Ciudad" required>
+          <option value="">Selecciona una ciudad</option>
+          <option value="Bogota">Bogotá</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Chia">Chía</option>
+          <option value="Mosquera">Mosquera</option>
+          <option value="Soacha">Soacha</option>
         </select>
-        <br><br>
-        
-        <input type="submit" value="ENVIAR">
-    </form>
+      </div>
+  
+      <div class="textarea-full">
+        <label for="Descripcion">Descripción</label>
+        <textarea name="descripcion" id="Descripcion" rows="4" required></textarea>
+      </div>
+    </div>
+  
+    <div class="form-submit">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+  
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script> 
-    
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+    crossorigin="anonymous"></script>
+
 </body>
 
 
 
 <footer><!--PIE DE PAGINA-->
-    <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d994.209433352084!2d-74.1280703546288!3d4.623022966912765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1740800694617!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="200" width="300"></iframe>
-    </div>
+  <div class="mapa">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d994.209433352084!2d-74.1280703546288!3d4.623022966912765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1740800694617!5m2!1ses!2sco"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="200"
+      width="300"></iframe>
+  </div>
 
-        <p class="pie5">Contacto:
+  <p class="pie5">Contacto:
 
-            Dirección: [68c 44 Cl. 2a] | Teléfono: [3118355949] | Email: [moralozano2011@gmail.com]
-            <br> Política de privacidad | Términos y condiciones
-            <br><br>
-            Redes sociales:
-            <br>
-            [Iconos de Facebook, Instagram, Pinterest, etc.]
-            <br><br>
-            © [2025] Special. Todos los derechos reservados.
-        </p>
-    
-    
+    Dirección: [68c 44 Cl. 2a] | Teléfono: [3118355949] | Email: [moralozano2011@gmail.com]
+    <br> Política de privacidad | Términos y condiciones
+    <br><br>
+    Redes sociales:
+    <br>
+    [Iconos de Facebook, Instagram, Pinterest, etc.]
+    <br><br>
+    © [2025] Special. Todos los derechos reservados.
+  </p>
+
+
 </footer>
 
 </html>
