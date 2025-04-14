@@ -9,8 +9,6 @@ position: relative;
     margin: 20px auto;       /* centra el contenedor */
     width: fit-content;      /* solo ocupa lo necesario */
     padding: 5px;
-
-    
 }
 
 .navbar{
@@ -163,7 +161,6 @@ header{
     bottom: 0px;
     margin: auto;
     padding: none;
-    
 }
 
 
