@@ -1,0 +1,159 @@
+$primary-color: #3498db;
+/*Espacio para el formulario de CONTACTO*/
+.formulario-contacto {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+  
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+  
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+        color: #444;
+      }
+  
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+        background-color: #fff;
+      }
+  
+      .textarea-full {
+        grid-column: span 2;
+      }
+    }
+  
+    .form-submit {
+      text-align: center;
+      margin-top: 20px;
+  
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  
+  /* Responsividad */
+  @media (max-width: 600px) {
+    .formulario-contacto {
+      .form-grid {
+        .textarea-full {
+          grid-column: span 1;
+        }
+      }
+    }
+  }
+
+
+/*Espacio para lo botones de precios*/
+
+@mixin boton-estilo($bg-color, $hover-color) {
+    background-color: $bg-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  .buy-button {
+    @include boton-estilo(#e60000, #00b300);
+  }
+  
+  .form-submit button {
+    @include boton-estilo(#007bff, #0056b3);
+  }
+
+  /*ESPACIO PARA LOS FOOTERS*/
+  
+  footer {
+    background-color: rgb(110, 103, 103);
+    border: solid rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+  
+    .pie1 {
+      text-align: center;
+      padding: 0;
+      color: white;
+      font-size: 1rem;
+    }
+  
+    .redes-sociales {
+      margin-top: 10px;
+  
+      a {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        color: #00ffff; // Color neon celeste
+        text-decoration: none;
+        transition: 0.3s;
+  
+        i {
+          text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+        }
+  
+        &:hover {
+          color: #ff00ff; // Cambia a neón rosado al pasar el mouse
+          i {
+            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes shadow-drop-2-center {
+    0% {
+      transform: translateZ(0);
+      box-shadow: 0 0 0 0 transparent;
+    }
+    100% {
+      transform: translateZ(50px);
+      box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
+    }
+  }
+  
+  
+
+
+
+  
+  

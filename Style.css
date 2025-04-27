@@ -1,0 +1,137 @@
+/*Espacio para el formulario de CONTACTO*/
+.formulario-contacto {
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.formulario-contacto h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+.formulario-contacto .form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.formulario-contacto .form-grid label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+.formulario-contacto .form-grid input,
+.formulario-contacto .form-grid select,
+.formulario-contacto .form-grid textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+.formulario-contacto .form-grid .textarea-full {
+  grid-column: span 2;
+}
+.formulario-contacto .form-submit {
+  text-align: center;
+  margin-top: 20px;
+}
+.formulario-contacto .form-submit button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.formulario-contacto .form-submit button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .formulario-contacto .form-grid .textarea-full {
+    grid-column: span 1;
+  }
+}
+/*Espacio para lo botones de precios*/
+.buy-button {
+  background-color: #e60000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.buy-button:hover {
+  background-color: #00b300;
+}
+
+.form-submit button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-submit button:hover {
+  background-color: #0056b3;
+}
+
+/*ESPACIO PARA LOS FOOTERS*/
+footer {
+  background-color: rgb(110, 103, 103);
+  border: solid rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
+footer .pie1 {
+  text-align: center;
+  padding: 0;
+  color: white;
+  font-size: 1rem;
+}
+footer .redes-sociales {
+  margin-top: 10px;
+}
+footer .redes-sociales a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #00ffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+footer .redes-sociales a i {
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+footer .redes-sociales a:hover {
+  color: #ff00ff;
+}
+footer .redes-sociales a:hover i {
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+@keyframes shadow-drop-2-center {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

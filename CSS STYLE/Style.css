@@ -1,25 +1,28 @@
-*{
-margin: 0;
-padding: 0;
-position: relative;
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
+
 /*MAPA IFRAME*/
-.mapa{
-    border: solid #660708;
-    margin: 20px auto;       /* centra el contenedor */
-    width: fit-content;      /* solo ocupa lo necesario */
+.mapa {
+
+    margin: 20px auto;
+    /* centra el contenedor */
+    width: fit-content;
+    /* solo ocupa lo necesario */
     padding: 5px;
 }
 
-.navbar{
+.navbar {
     background-color: rgb(153, 153, 153) !important;
 }
 
-    
+
 
 /*PARRAFOSS*/
 
-.parrafo1{
+.parrafo1 {
     font-size: 20px;
     text-justify: auto;
 }
@@ -28,31 +31,35 @@ position: relative;
 
 
 /*PARA HACER ESTILOS DE COLOR*/
-.opcion{
+.opcion {
     color: rgb(112, 102, 102);
     padding: 0;
-    list-style-type: none; 
-    text-decoration: none;  
-    
+    list-style-type: none;
+    text-decoration: none;
+
 
 }
 
 
 /*FUENTES DE LAS LISTAS DE LAS PAGINAS*/
-.li1{
-    font-family:fantasy;
+.li1 {
+    font-family: fantasy;
 
 }
-.li2{
-    font-family:fantasy;
-}
-.li3{
+
+.li2 {
     font-family: fantasy;
 }
-.li4{
+
+.li3 {
     font-family: fantasy;
 }
-.li5{
+
+.li4 {
+    font-family: fantasy;
+}
+
+.li5 {
     font-family: fantasy;
 }
 
@@ -60,42 +67,44 @@ position: relative;
 
 /*FINAL DE LAS FUENTES DE LAS LISTAS DE LINKS*/
 
-footer{
-    background-color: rgb(110, 103, 103);
-    border: solid coral;
-}
+
+
+
 
 /*ESPACIO PARA LAS FUENTES Y POSICIONES DE LOS TITULOS DE LAS PAGINAS*/
 .TITULO1 {
     font-family: "Bangers", serif;
     font-size: 7rem;
-    text-align: center ;
-}
-.TITULO2{
-    font-family: "Bangers", serif;
-    font-size: 5rem;
-    text-align: center ;
-
-}
-
-
-.TITULO3{
-    font-family: "Bangers", serif;
-    font-size: 100px;
-    text-align: center ;
-    
-}
-.TITULO4{
-    
-    font-family: "Bangers", serif;
-    font-size: 100px;
-    text-align: center ;
-    
-}
-.TIVISION{
     text-align: center;
 }
-.TIVISION h2{
+
+.TITULO2 {
+    font-family: "Bangers", serif;
+    font-size: 5rem;
+    text-align: center;
+
+}
+
+
+.TITULO3 {
+    font-family: "Bangers", serif;
+    font-size: clamp(40px, 10vw, 100px);
+    text-align: center;
+
+}
+
+.TITULO4 {
+    font-family: "Bangers", serif;
+    font-size: clamp(40px, 8vw, 100px);
+    text-align: center;
+  }
+  
+
+.TIVISION {
+    text-align: center;
+}
+
+.TIVISION h2 {
     font-family: "Bangers", serif;
     font-size: 4rem;
     background: #646262;
@@ -105,11 +114,13 @@ footer{
     margin-top: 30px;
     border-radius: 32px;
 }
-.TITULO5{
+
+.TITULO5 {
     font-family: "Bangers", cursive;
     text-align: center;
     color: #222;
-    font-size: 6vw; /* 6% del ancho del viewport */
+    font-size: 6vw;
+    /* 6% del ancho del viewport */
 }
 
 
@@ -123,45 +134,63 @@ footer{
 /*ESPACIO PARA  POSICIONAR EL LOGO EN LA PARTE SUPERIOR DERECHA DEL NAV*/
 
 header .LOGOINI {
-    width: auto; /* Ajustamos el ancho a automático para que se ajuste al contenido */
-    height: auto; /* Ajustamos la altura a automático para que se ajuste al contenido */
-    max-height: 110px; /* Ajustamos la altura máxima según sea necesario */
-    position: absolute; /* Posicionamos el logo absolutamente dentro del header */
-    top: -9px; /* Ajustamos la posición desde la parte superior */
-    right: 0px; /* Ajustamos la posición desde la derecha */
+    width: auto;
+    /* Ajustamos el ancho a automático para que se ajuste al contenido */
+    height: auto;
+    /* Ajustamos la altura a automático para que se ajuste al contenido */
+    max-height: 110px;
+    /* Ajustamos la altura máxima según sea necesario */
+    position: absolute;
+    /* Posicionamos el logo absolutamente dentro del header */
+    top: -9px;
+    /* Ajustamos la posición desde la parte superior */
+    right: 0px;
+    /* Ajustamos la posición desde la derecha */
 }
+
 /*TERMINA ESPACIO DE POSICIONAR EL LOGO*/
 
 
-header{
-    background-color: #660708; 
+header {
+    background-color: #660708;
 }
 
 /*ESPACIO PARA LOS PIE DE PAGINAS*/
-.pie1{/*INICIO*/
+
+footer {
+    background-color: rgb(110, 103, 103);
+    border: solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  footer .pie1 {
     text-align: center;
     padding: 0;
-    
-    
-}
-.pie2{/*SOBRE NOSOTROS*/
-    text-align: left;
-    
-}
-.pie3{/*PRODUCTOS*/
-    text-align: center;
-}
-.pie4{/*PRECIOS*/
-    text-align: center;
-}
-.pie5{
-    border:solid #660708;
-    margin-right: 50%;
-    text-align: center;
-    bottom: 0px;
-    margin: auto;
-    padding: none;
-}
+    color: white;
+    font-size: 1rem;
+  }
+  footer .redes-sociales {
+    margin-top: 10px;
+  }
+  footer .redes-sociales a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  footer .redes-sociales a i {
+    text-shadow: 0 0 5px #e22020, 0 0 10px #e22020, 0 0 20px #e22020;
+  }
+  footer .redes-sociales a:hover {
+    color: #ffffff;
+  }
+  footer .redes-sociales a:hover i {
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+  }
+
+
 
 
 
@@ -170,9 +199,11 @@ header{
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* centra la imagen horizontalmente */
-  }
-  
+    margin: 0 auto;
+    /* centra la imagen horizontalmente */
+}
+
+
 .IMG1{
     display: flex;
     align-items: center;
@@ -186,28 +217,55 @@ header{
 .IMG1 img{
     height: 300px; 
 }
+    
+/*ANIMACION DE LA IMAGEN DE SPECIAL indexX.html*/
 
-.IMGBODY1 img{
+@keyframes flip-scale-up-ver {
+    0% {
+      transform: rotateX(0) scale(1);
+      opacity: 0;
+    }
+    50% {
+      transform: rotateX(180deg) scale(1.2);
+      opacity: 0.5;
+    }
+    100% {
+      transform: rotateX(360deg) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .IMGBODY1 img {
     max-width: 1080px;
     width: 100%;
     height: 400px;
     display: block;
     margin: 0 auto;
     border-radius: 12px;
-}
-.BOTONCARRO{
+  
+    animation: flip-scale-up-ver 1.5s ease-in-out both;
+  }
+
+
+
+  
+.BOTONCARRO {
     text-align: end;
     top: 210px;
 }
-.IMGHABITACION img{
+
+
+/*espacio de las 3 imagenes*/
+.IMGHABITACION img {
     max-width: 780px;
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
-    
+
 }
+
 /* Estilo para las imágenes pequeñas */
 .imagen-lateral {
     max-width: 250px;
@@ -221,9 +279,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Para que sea responsivo */
-    gap: 1rem; /* Espacio entre imágenes */
+    flex-wrap: wrap;
+    /* Para que sea responsivo */
+    gap: 1rem;
+    /* Espacio entre imágenes */
 }
+
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
     .contenedor-habitacion {
@@ -236,36 +297,43 @@ header{
     }
 }
 
+/*--------------*/
 
-.conocenosimg1{
+
+
+
+
+
+.conocenosimg1 {
     list-style: none;
     position: relative;
     left: 5em;
     top: 55px;
 }
-.conocenosimg2{
- list-style: none;
- position: relative;
- text-align: right;
- right: 11em;
- bottom: 230px;
+
+.conocenosimg2 {
+    list-style: none;
+    position: relative;
+    text-align: right;
+    right: 11em;
+    bottom: 230px;
 }
 
 
-.container1{
+.container1 {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px , 1fr));
-    
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
     text-align: center;
     gap: 30px;
     padding: 0;
-    
+
 }
 
-.container1 img{
-  width: 100%;
-  max-width: 300px;
+.container1 img {
+    width: 100%;
+    max-width: 300px;
 }
 
 
@@ -273,28 +341,24 @@ header{
 /*TERMINA POSICION DE IMAGENES*/
 
 
-/*POSICION DE BASECAMAS Y PRECIOS EN PRODUCTOS*/  
 
-
-/*TERMINA ESPACIO*/
 
 
 /*ESPACIO PARA LAS ETIQUETAS ( H ) DE CUALQUIER TAMANO*/
 
-.listaprecios{
-    display:inline;
+.listaprecios {
+    display: inline;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    
-    
+
+
 }
 
 
 /*
-Espacio estilo del formulario
+Espacio estilo del formulario SASS
 */
-
 .formulario-contacto {
     background-color: #f0f0f0;
     padding: 30px;
@@ -302,31 +366,27 @@ Espacio estilo del formulario
     max-width: 900px;
     margin: 40px auto;
     font-family: Arial, sans-serif;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
-  
   .formulario-contacto h2 {
     text-align: center;
     margin-bottom: 25px;
     color: #333;
   }
-  
-  .form-grid {
+  .formulario-contacto .form-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
-  
-  .form-grid label {
+  .formulario-contacto .form-grid label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
     color: #444;
   }
-  
-  .form-grid input,
-  .form-grid select,
-  .form-grid textarea {
+  .formulario-contacto .form-grid input,
+  .formulario-contacto .form-grid select,
+  .formulario-contacto .form-grid textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -334,23 +394,14 @@ Espacio estilo del formulario
     font-size: 1rem;
     background-color: #fff;
   }
-  
-  .textarea-full {
+  .formulario-contacto .form-grid .textarea-full {
     grid-column: span 2;
   }
-  
-  @media (max-width: 600px) {
-    .textarea-full {
-      grid-column: span 1; /* que textarea ocupe solo una columna en móviles */
-    }
-  }
-  
-  .form-submit {
+  .formulario-contacto .form-submit {
     text-align: center;
     margin-top: 20px;
   }
-  
-  .form-submit button {
+  .formulario-contacto .form-submit button {
     background-color: #007bff;
     color: white;
     padding: 12px 30px;
@@ -360,87 +411,37 @@ Espacio estilo del formulario
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
-  .form-submit button:hover {
+  .formulario-contacto .form-submit button:hover {
     background-color: #0056b3;
   }
   
-  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .formulario-contacto .form-grid .textarea-full {
+      grid-column: span 1;
+    }
+  }
 
-/* .ulprecios1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 100px;
-    margin-bottom: 100px;
-}
-
-
-.ulprecios2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 100px;
-    margin-bottom: 100px;
-}
-
-.ulprecios3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 100px;
-    margin-bottom: 100px;
-}
-
-.VEN1,
-.VEN2,
-.VEN3
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.VEN1 .COMPRA1,
-.VEN1 .COMPRA4,
-.VEN1 .COMPRA7,
-.VEN2 .COMPRA2,
-.VEN2 .COMPRA5,
-.VEN2 .COMPRA8,
-.VEN3 .COMPRA3,
-.VEN3 .COMPRA6,
-.VEN3 .COMPRA9
-{
-    background-color: #e41013;
-    border: none;
-    border-radius: 10px;
-    width: 100px;
-    color: aliceblue;
-
-}
-.VEN1 img,
-.VEN2 img,
-.VEN3 img
-{
-    border-radius: 75px;
-}
-*/
-
+  /*TERMINA ESPACIO PARA FORMULARIO*/
 
 
 /*ESTILOS GRID PARA PRODUCTOS + RESPONSIVIDAD*/
-.grid-container{
+
+
+
+
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 450px); /* Fuerza 3 columnas exactas */
-    grid-template-rows: repeat(3, auto);   /* Fuerza 3 filas (auto para altura según contenido) */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* Fuerza 3 columnas exactas */
+    grid-template-rows: repeat(3, auto);
+    /* Fuerza 3 filas (auto para altura según contenido) */
     /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
     gap: 50px;
-    
+
 }
-.product-card{
+
+.product-card {
     background-color: rgb(167, 167, 167);
     border-radius: 12px;
     overflow: hidden;
@@ -448,66 +449,131 @@ Espacio estilo del formulario
     text-align: center;
     padding-bottom: 20px;
 }
+
 .product-card img {
     width: 100%;
-    height: 200px ;
+    height: 200px;
     display: block;
 }
+
+
+/*Espacio para lo botones de productos*/
 .buy-button {
-    margin-top: 15px;
-    padding: 10px 20px;
     background-color: #e60000;
     color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 30px;
+    font-size: 1rem;
     cursor: pointer;
-    font-weight: bold;
     transition: background-color 0.3s ease;
-}
-.buy-button:hover{
+  }
+  .buy-button:hover {
     background-color: #00b300;
-}
+  }
+  
+  .form-submit button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .form-submit button:hover {
+    background-color: #0056b3;
+  }
+
+/*esto hace que se coloque el efecto de sombra en el grid de los pr*/
+  @keyframes shadow-drop-2-center {
+    10% {
+      transform: translateZ(0);
+      box-shadow: 0 0 0 0 transparent;
+    }
+    100% {
+      transform: translateZ(50px);
+      box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .product-card {
+    background-color: rgb(167, 167, 167);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 20px;
+  
+    /* ANIMACIÓN */
+    animation: shadow-drop-2-center 1s ease forwards;
+  }
+  
+
+
+/*-----
 
 
 
 
+----*/
 
 
 
+/*animacion de @el placer de un buen descando del index@*/
+@keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
 
-/*---------*/
-
-
-
-section .SLOGAN{
+  section .SLOGAN {
     text-align: center;
     margin: 0;
     padding: 0;
     font-size: 2rem;
     font-style: italic;
+
+    /* Animación */
+    animation: tracking-in-expand-fwd 1s ease forwards;
 }
+
+
+
+
 
 
 .precio1,
 .precio2,
-.precio3{
+.precio3 {
     text-align: center;
 }
 
-.h3sb{
+.h3sb {
     font-family: fantasy;
-    
-    
+
+
 }
 
-.VISION{
+.VISION {
     background-color: #e6e6e6;
     border-radius: 15px;
     text-align: center;
     text-justify: auto;
     font-size: 20px;
     top: 30px;
-    
+
 }
 
 
@@ -516,8 +582,8 @@ section .SLOGAN{
 
 
 /*SECCION DE LOS BOTONES*/
-.boton1{
-    border:solid #660708;
+.boton1 {
+    border: solid #660708;
     text-align: center;
     margin-left: 47%;
     margin-right: 47%;
@@ -526,16 +592,14 @@ section .SLOGAN{
     position: relative;
     top: 400px;
 }
-.navbar-brand{
-    border:  solid #646262;
+
+.navbar-brand {
+    border: solid #646262;
     border-radius: 15%;
 }
 
 
 
- /*TERMINA LA SECCION DE LOS BOTONES*/
+/*TERMINA LA SECCION DE LOS BOTONES*/
 
 
- /*VISION*/
-
- 
