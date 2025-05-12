@@ -601,5 +601,34 @@ Espacio estilo del formulario SASS
 
 
 /*TERMINA LA SECCION DE LOS BOTONES*/
+.price-table {
+  font-size: 0.9rem;
+  table-layout: fixed;
+  width: 100%;
+}
+.price-table th,
+.price-table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+  height: 50px;
+}
+
+.price {
+  color: red;
+}
+.table-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.table-wrapper table {
+  max-width: 400px;
+  width: 100%;
+}
+table.price-table thead.table-title th {
+  background-color: rgb(219, 58, 58) !important;
+  color: white !important;
+}
 
 
