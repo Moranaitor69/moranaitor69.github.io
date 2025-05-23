@@ -329,6 +329,7 @@ footer {
   max-width: 1200px;
   margin: 0 auto 60px auto; /* separación del footer y centrado */
   background: none; /* quitamos fondo gris si lo había */
+
 }
 
 .IMG1 {
@@ -359,6 +360,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    margin-bottom: 25px;
 
 
 }
