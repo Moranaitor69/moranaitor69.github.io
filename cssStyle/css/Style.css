@@ -243,8 +243,14 @@ footer {
     display: block;
     margin: 0 auto;
     border-radius: 12px;
+    margin-top: 50px;
   
     animation: flip-scale-up-ver 1.5s ease-in-out both;
+  }
+
+  .contsubtitulo{
+    margin-bottom: 30px;
+
   }
 
 
