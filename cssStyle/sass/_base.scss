@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.mapa {
+  margin: 20px auto;
+  width: fit-content;
+  padding: 5px;
+}
+
+.navbar {
+  background-color: rgb(153, 153, 153) !important;
+}
+.slogan {
+  text-align: center;
+  font-family: 'Paprika', cursive;
+  font-size: 2rem;
+  margin-top: 1rem;
+  @extend .animate__animated !optional;
+  @extend .animate__fadeInDown !optional;
+}
+
+
+/*ESPACIO LAYOUT*/

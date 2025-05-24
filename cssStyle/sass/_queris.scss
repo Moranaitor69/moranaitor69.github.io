@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  .contenedor-habitacion {
+    flex-direction: column;
+  }
+
+  .imagen-lateral {
+    width: 60%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .formulario-contacto .form-grid .textarea-full {
+    grid-column: span 1;
+  }
+}
+
+/*ESPACIO*/

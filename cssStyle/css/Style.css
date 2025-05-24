@@ -4,13 +4,9 @@
   position: relative;
 }
 
-/*MAPA IFRAME*/
 .mapa {
-
   margin: 20px auto;
-  /* centra el contenedor */
   width: fit-content;
-  /* solo ocupa lo necesario */
   padding: 5px;
 }
 
@@ -18,113 +14,17 @@
   background-color: rgb(153, 153, 153) !important;
 }
 
-
-
-/*PARRAFOSS*/
-
-.parrafo1 {
-  font-size: 20px;
-  text-justify: auto;
-}
-
-
-
-
-/*PARA HACER ESTILOS DE COLOR*/
-.opcion {
-  color: rgb(112, 102, 102);
-  padding: 0;
-  list-style-type: none;
-  text-decoration: none;
-
-
-}
-
-
-/*FUENTES DE LAS LISTAS DE LAS PAGINAS*/
-.li1 {
-  font-family: fantasy;
-
-}
-
-.li2 {
-  font-family: fantasy;
-}
-
-.li3 {
-  font-family: fantasy;
-}
-
-.li4 {
-  font-family: fantasy;
-}
-
-.li5 {
-  font-family: fantasy;
-}
-
-
-
-/*FINAL DE LAS FUENTES DE LAS LISTAS DE LINKS*/
-
-
-
-
-
-/*ESPACIO PARA LAS FUENTES Y POSICIONES DE LOS TITULOS DE LAS PAGINAS*/
-.titulo1 {
-  font-family: "Bangers", serif;
-  font-size: 7rem;
+.slogan {
   text-align: center;
+  font-family: "Paprika", cursive;
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
-.titulo2 {
-  font-family: "Bangers", serif;
-  font-size: 5rem;
-  text-align: center;
-
-}
-
-
-.titulo3 {
-  font-family: "Bangers", serif;
-  font-size: clamp(40px, 10vw, 100px);
-  text-align: center;
-
-}
-
-
-.tivision {
-  text-align: center;
-}
-
-.tivision h2 {
-  font-family: "Bangers", serif;
-  font-size: 4rem;
-  background: #646262;
-  display: inline-block;
-  padding: 0.2em 0.6em;
-  margin: 0;
-  margin-top: 30px;
-  border-radius: 32px;
-}
-
-.titulo5 {
-  font-family: "Bangers", cursive;
-  text-align: center;
-  color: #222;
-  font-size: 6vw;
-  /* 6% del ancho del viewport */
-}
-
-
-/*TERMINA EL ESPACIO DE FUENTES Y POSICION DE TITULOS*/
-
+/*ESPACIO LAYOUT*/
 header {
   background-color: #660708;
 }
-
-/*ESPACIO PARA LOS PIE DE PAGINAS*/
 
 footer {
   background-color: rgb(110, 103, 103);
@@ -133,294 +33,113 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
 footer .pie1 {
   text-align: center;
   padding: 0;
   color: white;
   font-size: 1rem;
 }
-
 footer .redes-sociales {
   margin-top: 10px;
 }
-
 footer .redes-sociales a {
   margin: 0 10px;
   font-size: 1.5rem;
-  color: #000000;
+  color: #000;
   text-decoration: none;
   transition: 0.3s;
 }
-
 footer .redes-sociales a i {
   text-shadow: 0 0 5px #e22020, 0 0 10px #e22020, 0 0 20px #e22020;
 }
-
 footer .redes-sociales a:hover {
-  color: #ffffff;
+  color: #fff;
 }
-
 footer .redes-sociales a:hover i {
   text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
 }
 
-.img1 {
+.imgbody1 {
   display: flex;
-  align-items: center;
-  background-color: #b6b2b2;
-  border-radius: 15px;
-  width: 75%;
-  margin: 0 auto;
   justify-content: center;
-
+  margin: 2rem 0;
 }
-
-.img1 img {
-  height: 300px;
-}
-
-/*ANIMACION DE LA IMAGEN DE SPECIAL indexX.html*/
-
-@keyframes flip-scale-up-ver {
-  0% {
-    transform: rotateX(0) scale(1);
-    opacity: 0;
-  }
-
-  50% {
-    transform: rotateX(180deg) scale(1.2);
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: rotateX(360deg) scale(1);
-    opacity: 1;
-  }
-}
-
 .imgbody1 img {
-  max-width: 1080px;
   width: 100%;
-  height: 400px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 12px;
-  margin-top: 50px;
-
-  animation: flip-scale-up-ver 1.5s ease-in-out both;
-}
-
-.contsubtitulo {
-  margin-bottom: 30px;
-
-}
-
-/*espacio de las 3 imagenes*/
-.imghabitacion img {
-  max-width: 780px;
-  width: 100%;
+  max-width: 1000px;
   height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
-
 }
 
-/* Estilo para las imágenes pequeñas */
-.imagen-lateral {
-  max-width: 250px;
-  width: 30%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Nuevo contenedor para organizar las tres imágenes */
 .contenedor-habitacion {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  /* Para que sea responsivo */
   gap: 1rem;
-  /* Espacio entre imágenes */
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
-
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 768px) {
-  .contenedor-habitacion {
-    flex-direction: column;
-  }
-
-  .imagen-lateral {
-    width: 60%;
-    max-width: none;
-  }
+.contenedor-habitacion .imagen-lateral {
+  width: 20%;
+  min-width: 150px;
+  object-fit: contain;
+  border-radius: 10px;
 }
-
-/*--------------*/
-
-
-
-
-
-
-.conocenosimg1 {
-  list-style: none;
-  position: relative;
-  left: 5em;
-  top: 55px;
+.contenedor-habitacion .imghabitacion img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
 }
-
-.conocenosimg2 {
-  list-style: none;
-  position: relative;
-  text-align: right;
-  right: 11em;
-  bottom: 230px;
-}
-
 
 .container1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 45%, 500px), 1fr));
   gap: 30px;
   padding: 40px 20px;
-  max-width: 1200px;
+  max-width: 1400px;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto 60px auto;
-  /* separación del footer y centrado */
   background: none;
-  /* quitamos fondo gris si lo había */
-
 }
-
-.img1 {
-  background: none;
-  /* eliminar fondo gris si existe */
+.container1 .img1 {
+  background: #f0f0f0;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
 }
-
-.img1 img {
+.container1 .img1:hover {
+  transform: translateY(-4px);
+}
+.container1 .img1 img {
   width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
   border-radius: 12px;
-  background: none;
 }
 
-
-
-/*TERMINA POSICION DE IMAGENES*/
-
-
-
-
-
-/*ESPACIO PARA LAS ETIQUETAS ( H ) DE CUALQUIER TAMANO*/
-
-.listaprecios {
-  display: inline;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  margin-bottom: 25px;
-
-
+body {
+  overflow-x: hidden;
 }
 
-
-/*
-Espacio estilo del formulario SASS
-*/
-.formulario-contacto {
-  background-color: #f0f0f0;
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 900px;
-  margin: 40px auto;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  font-family: sans-serif;
 }
-
-.formulario-contacto h2 {
-  text-align: center;
-  margin-bottom: 25px;
-  color: #333;
-}
-
-.formulario-contacto .form-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.formulario-contacto .form-grid label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
-  color: #444;
-}
-
-.formulario-contacto .form-grid input,
-.formulario-contacto .form-grid select,
-.formulario-contacto .form-grid textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-  background-color: #fff;
-}
-
-.formulario-contacto .form-grid .textarea-full {
-  grid-column: span 2;
-}
-
-.formulario-contacto .form-submit {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.formulario-contacto .form-submit button {
-  background-color: #007bff;
-  color: white;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 30px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.formulario-contacto .form-submit button:hover {
-  background-color: #0056b3;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .formulario-contacto .form-grid .textarea-full {
-    grid-column: span 1;
-  }
-}
-
-/*TERMINA ESPACIO PARA FORMULARIO*/
-
-
-/*ESTILOS GRID PARA PRODUCTOS + RESPONSIVIDAD*/
-
-
-
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  /* Fuerza 3 columnas exactas */
   grid-template-rows: repeat(3, auto);
-  /* Fuerza 3 filas (auto para altura según contenido) */
-  /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
   gap: 50px;
-
 }
 
 .product-card {
@@ -430,16 +149,14 @@ Espacio estilo del formulario SASS
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding-bottom: 20px;
+  margin-bottom: 30px;
 }
-
 .product-card img {
   width: 100%;
   height: 200px;
   display: block;
 }
 
-
-/*Espacio para lo botones de productos*/
 .buy-button {
   background-color: #e60000;
   color: white;
@@ -450,99 +167,197 @@ Espacio estilo del formulario SASS
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .buy-button:hover {
   background-color: #00b300;
 }
 
-.form-submit button {
+.price-table {
+  text-align: center;
+  vertical-align: middle;
+}
+.price-table th,
+.price-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+.price-table thead.table-title th {
+  background-color: #d13636 !important;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.img1 {
+  display: flex;
+  align-items: center;
+  background-color: #b6b2b2;
+  border-radius: 15px;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.img1 img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  background: none;
+}
+
+.imgbody1 img {
+  max-width: 1080px;
+  width: 100%;
+  height: 400px;
+  margin: 50px auto 0;
+  border-radius: 12px;
+  animation: flip-scale-up-ver 1.5s ease-in-out both;
+}
+
+@keyframes flip-scale-up-ver {
+  0% {
+    transform: rotateX(0) scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: rotateX(180deg) scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotateX(360deg) scale(1);
+    opacity: 1;
+  }
+}
+/**/
+.parrafo1 {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.opcion {
+  color: rgb(112, 102, 102);
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.li1, .li2, .li3, .li4, .li5 {
+  font-family: fantasy;
+}
+
+.titulo1, .titulo2, .titulo3, .titulo5 {
+  font-family: "Bangers", serif;
+  text-align: center;
+}
+
+.titulo1 {
+  font-size: 7rem;
+}
+
+.titulo2 {
+  font-size: 5rem;
+}
+
+.titulo3 {
+  font-size: clamp(40px, 10vw, 100px);
+}
+
+.titulo5 {
+  font-size: 6vw;
+  color: #222;
+  font-family: "Bangers", cursive;
+}
+
+.tivision {
+  text-align: center;
+}
+.tivision h2 {
+  font-family: "Bangers", serif;
+  font-size: 4rem;
+  background: #646262;
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  margin-top: 30px;
+  border-radius: 32px;
+}
+
+.h3sb {
+  font-family: fantasy;
+}
+
+/*espacio comoponentes(archivo que se llama botAnima)*/
+.formulario-contacto {
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.formulario-contacto h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+.formulario-contacto .form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.formulario-contacto .form-grid label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+.formulario-contacto .form-grid input,
+.formulario-contacto .form-grid select,
+.formulario-contacto .form-grid textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+.formulario-contacto .form-grid .textarea-full {
+  grid-column: span 2;
+}
+.formulario-contacto .form-submit {
+  text-align: center;
+  margin-top: 20px;
+}
+.formulario-contacto .form-submit button {
   background-color: #007bff;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 30px;
   border: none;
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-.form-submit button:hover {
+.formulario-contacto .form-submit button:hover {
   background-color: #0056b3;
 }
 
-/*esto hace que se coloque el efecto de sombra en el grid de los pr*/
-@keyframes shadow-drop-2-center {
-  10% {
-    transform: translateZ(0);
-    box-shadow: 0 0 0 0 transparent;
+/*ESPACIO*/
+@media (max-width: 768px) {
+  .contenedor-habitacion {
+    flex-direction: column;
   }
-
-  100% {
-    transform: translateZ(50px);
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
+  .imagen-lateral {
+    width: 60%;
+    max-width: none;
   }
 }
-
-.product-card {
-  background-color: rgb(167, 167, 167);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding-bottom: 20px;
-
-  /* ANIMACIÓN */
-  animation: shadow-drop-2-center 1s ease forwards;
-}
-
-
-/*animacion de @el placer de un buen descando del index@*/
-@keyframes tracking-in-expand-fwd {
-  0% {
-    letter-spacing: -0.5em;
-    transform: translateZ(-700px);
-    opacity: 0;
-  }
-
-  40% {
-    opacity: 0.6;
-  }
-
-  100% {
-    transform: translateZ(0);
-    opacity: 1;
+@media (max-width: 600px) {
+  .formulario-contacto .form-grid .textarea-full {
+    grid-column: span 1;
   }
 }
-
-
-section .slogan {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  font-size: 2rem;
-  font-style: italic;
-
-  /* Animación */
-  animation: tracking-in-expand-fwd 1s ease forwards;
-}
-
-
-
-
-
-
-.precio1,
-.precio2,
-.precio3 {
-  text-align: center;
-}
-
-.h3sb {
-  font-family: fantasy;
-
-
-}
-
+/*ESPACIO*/
 .vision {
   background-color: #e6e6e6;
   border-radius: 15px;
@@ -550,24 +365,6 @@ section .slogan {
   text-justify: auto;
   font-size: 20px;
   top: 30px;
-
-}
-
-
-/*TERMINA ESPACIO*/
-
-
-
-/*SECCION DE LOS BOTONES*/
-.boton1 {
-  border: solid #660708;
-  text-align: center;
-  margin-left: 47%;
-  margin-right: 47%;
-  margin-top: 5%;
-  padding: 0;
-  position: relative;
-  top: 400px;
 }
 
 .navbar-brand {
@@ -575,39 +372,16 @@ section .slogan {
   border-radius: 15%;
 }
 
-
-
-/*TERMINA LA SECCION DE LOS BOTONES*/
-.price-table {
-  font-size: 0.9rem;
-  table-layout: fixed;
-  width: 100%;
-}
-
-.price-table th,
-.price-table td {
+.boton1 {
+  border: solid #660708;
   text-align: center;
-  vertical-align: middle;
-  padding: 8px;
-  height: 50px;
+  margin-left: 47%;
+  margin-right: 47%;
+  margin-top: 5%;
+  padding: 0;
+  top: 400px;
 }
 
-.price {
-  color: red;
-}
+/*espacio*/
 
-.table-wrapper {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-.table-wrapper table {
-  max-width: 400px;
-  width: 100%;
-}
-
-table.price-table thead.table-title th {
-  background-color: rgb(219, 58, 58) !important;
-  color: white !important;
-}
+/*# sourceMappingURL=Style.css.map */
